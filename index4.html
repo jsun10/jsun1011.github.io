@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Superhero</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+body{
+   background-image: url('未标题-3.jpg');
+        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    
+    
+    h1{ font-family: 'Lato', sans-serif;
+        color: white;
+        
+        
+        
+        
+        
+    }
+
+.container {
+  margin-top: 30px;
+    margin-left: 30px;
+  display: flex;
+    font-family: 'Lato', sans-serif;}
+  .image-container {
+    perspective: 600px;
+      margin: 0 80px;}
+    .image{
+      animation: spin 4s infinite linear;
+    }
+    .image {
+      display: flex;
+      transition: transform 1s ease-out;
+      transform-style: preserve-3d;
+      cursor: pointer;
+        position: relative;
+    opacity: 0.5;}
+
+      img.side-a {
+        backface-visibility: hidden;
+       
+    
+      }
+
+      .image-desc.side-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+      }
+    
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+    .img2 {
+        
+        
+        
+        margin-left: 800px;
+        margin-top: 20px;
+        width: 31%;
+        height: 5%;
+        
+        opacity: 1;
+        
+  
+        
+        
+    }
+    
+    .img3 {
+        
+        
+        
+        margin-left: 1100px;
+        margin-top: 120px;
+        width: 10%;
+        height: 5%;
+       
+        opacity: 1;
+      
+  
+        
+        
+    }
+    
+    </style>
+</head>
+
+<body>
+        
+        <h1>City of Residence：Nepal </h1>
+
+   
+
+   <div class="container">
+  <div class="image-container">
+    <div class="image">
+      <img src="f17b772cc53a31bd959a6757c7464f61%E5%89%AF%E6%9C%AC.jpg" class="side-a" alt="Cat">
+      <div class="image-desc side-b">
+      <img src="f17b772cc53a31bd959a6757c7464f61%E5%89%AF%E6%9C%AC.jpg" class="side-b" alt="Cat">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+        <img src="%E6%9C%AA%E6%A0%87%E9%A2%98-4.png" class="img2">
+    <img src="%E6%9C%AA%E6%A0%87%E9%A2%98-14.png" class="img3">
+    
+
+
+
+
+
+
+</body>
+
+</html>
